@@ -1,0 +1,4 @@
+.login h1 a {
+  background-image: url("./source/img/logo-min.png");
+  background-size: contain;
+}

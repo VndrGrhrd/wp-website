@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./**/*.{html, js, php}"],
   theme: {
+    fontFamily: {
+      sans: ["Fira Code"],
+      serif: ["Fira Code"],
+      mono: ["Fira Code"],
+    },
     screens: {
       DEFAULT: "100%",
       // @media (min-width: 540px)

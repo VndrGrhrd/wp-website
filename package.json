@@ -1,8 +1,8 @@
 {
-  "name": "template-php-tailwind+gulp",
+  "name": "wp-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss -i ./source/style/input.css -o ./style.css --watch  --minify"
