@@ -1,1 +1,2 @@
-
+$("#form-contato").submit(function(o){o.preventDefault();o=new FormData(this);o.action="vg_theme_contato",jQuery.ajax({type:"post",dataType:"json",url:my_ajax_object.ajax_url,data:o,success:function(o){console.log(o)},error:function(o){console.log(o)}})});
+const equipeSwiper=new Swiper(".equipeSwiper",{slidesPerView:3,spaceBetween:30,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",dynamicBullets:!0}});

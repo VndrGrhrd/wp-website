@@ -53,6 +53,6 @@ function runTailwind() {
 }
 
 exports.default = function () {
-  watch(scssPath, series(buildStyles, runTailwind));
+  watch(scssPath, series(buildStyles));
   watch(libsJsPath, buildJavascript);
 };

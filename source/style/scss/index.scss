@@ -16,3 +16,134 @@ Text Domain: vando_theme
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img {
+  max-width: 100% !important;
+}
+
+.default-button {
+  padding: 0.6em 1.6em;
+  border-radius: 10px;
+  background-color: #467ff7;
+  border: 1px solid #467ff7;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: max-content;
+  margin: 30px auto 0;
+  &:hover {
+    transition-duration: 0.3s;
+
+    transition-timing-function: ease;
+    background-color: transparent;
+    color: #467ff7;
+  }
+}
+
+.title-default {
+  font-size: 65px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1em;
+  color: #1c244b;
+}
+
+.pagraph-default,
+p {
+  color: #324a6d;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.subtitle-default {
+  color: #1c244b;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  line-height: 2;
+}
+
+#hero {
+  background: url("source/img/markus-spiske-PsRUMc7vilg-unsplash.jpg");
+  background-position: bottom;
+  position: relative;
+  height: 70vh;
+  z-index: 0;
+  &::before {
+    content: "";
+    background-color: #f3f5f8;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+#sobre {
+  .sobre {
+    h2 {
+      text-align: left;
+    }
+    a {
+      margin-left: 0;
+    }
+  }
+}
+
+#sobre_page {
+  .foto img {
+    position: sticky;
+    top: 30px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: left;
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+  }
+  article {
+    margin: 15px 0;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1em;
+    color: #1c244b;
+  }
+}
